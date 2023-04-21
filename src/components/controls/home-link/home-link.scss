@@ -1,0 +1,14 @@
+@import "../../../styles/variables.scss";
+
+.home-link:hover {
+  opacity: 0.8;
+}
+
+.home-link:active {
+  opacity: 0.6;
+}
+
+.home-link__home-icon {
+  fill: $ui-color;
+  stroke: $ui-color;
+}

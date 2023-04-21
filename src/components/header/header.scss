@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+
+.header {
+  margin-bottom: 60px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 1200px;
+
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 50px;
+
+  border-bottom: 6px solid $ui-color;
+
+  @media (max-width: $tablet-width) {
+    width: 92%;
+  
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+    border-bottom-width: 4px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  
+    padding-bottom: 30px;
+  }
+}
+
+.header__search {
+  outline: 1px solid black;
+}
+
+.header__profile {
+  outline: 1px solid green;
+}

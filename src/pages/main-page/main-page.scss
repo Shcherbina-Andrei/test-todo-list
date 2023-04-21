@@ -1,0 +1,5 @@
+@import "../../styles/mixins.scss";
+
+.main-page__title {
+  @include title
+}

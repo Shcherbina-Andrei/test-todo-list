@@ -1,0 +1,68 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.new-task {
+  @include adding;
+}
+
+.new-task__title {
+  @include adding__title;
+}
+
+.new-task__form {
+  @include adding__form;
+}
+
+.new-task__field-group:not(:last-child) {
+  @include adding__group;
+}
+
+.new-task__field-group--input-text {
+  flex-direction: column;
+}
+
+.new-task__field-group--checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.new-task__label {
+  display: inline-block;
+
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 22px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.new-task__task-input {
+  @include adding__input;
+  font-size: 22px;
+}
+
+
+.new-task__task-input::placeholder {
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+  }
+}
+
+
+.new-task__submit-button {
+  @include add-form__submit-button;
+}
+
+.new-task__task-checkbox {
+  width: 40px;
+  height: 40px;
+
+  margin-left: 20px;
+}
+

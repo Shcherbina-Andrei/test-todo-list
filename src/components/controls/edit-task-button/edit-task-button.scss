@@ -1,0 +1,11 @@
+@import "../../../styles//variables.scss";
+
+.task-card__button--edit {
+  background-color: $ui-color;
+  margin-right: 15px;
+}
+
+.task-card__edit-icon {
+  fill: #00ffff;
+}
+

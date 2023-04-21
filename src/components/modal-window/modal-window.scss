@@ -1,0 +1,106 @@
+@import "../../styles/variables.scss";
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+
+  height: 100vh;
+  width: 100vw;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  pointer-events: none;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.modal--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__content {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  min-width: 20vw;
+
+  background-color: $background-color;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  transform: scale(0.5);
+  transition: 0.2s all;
+
+  @media (max-width: $mobile-width) {
+    min-width: none;
+    width: 90vw;
+  }
+}
+
+.modal__content--active {
+  transform: scale(1);
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.modal__close-button:hover {
+  opacity: 0.8;
+}
+
+.modal__close-button:active {
+  opacity: 0.6;
+}
+
+.modal__close-button:before,
+.modal__close-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  height: 40px;
+  width: 2px;
+
+  background-color: #333333;
+}
+
+.modal__close-button:before {
+  transform: rotate(45deg);
+}
+
+.modal__close-button:after {
+  transform: rotate(-45deg);
+}
+

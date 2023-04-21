@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.logo {
+  color: $ui-color;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.logo svg {
+  @media (max-width: $tablet-width) {
+    width: 180px;
+    height: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 160px;
+    height: 60px;
+  }
+}
+

@@ -1,0 +1,70 @@
+@import "./variables.scss";
+
+// Common
+
+@mixin title {
+  font-size: 46px;
+  text-transform: uppercase;
+  color: $ui-color;
+  text-align: center;
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
+}
+
+// Adding forms
+
+@mixin adding {
+  font-size: 22px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  
+    font-size: 18px;
+  }
+}
+
+@mixin adding__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin adding__form {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin adding__group {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+
+@mixin adding__input {
+  padding: 10px;
+
+  font-family: "Ubuntu", Arial;
+
+  border: none;
+  border-radius: 30px;
+}
+
+@mixin add-form__submit-button {
+  padding: 18px 18px;
+
+  font-size: 22px;
+  color: #00ffff;
+
+  background-color: $ui-color;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: 0.2s all;
+}

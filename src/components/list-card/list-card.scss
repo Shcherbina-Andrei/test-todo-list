@@ -1,0 +1,126 @@
+@import "../../styles/variables.scss";
+
+.list-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  width: 200px;
+  min-height: 200px;
+
+  padding: 10px;
+  padding-top: 30px;
+
+  background-color: rgb(218, 218, 248);
+
+  border-radius: 10px;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: row;
+
+    min-height: auto;
+    width: 100%;
+
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: 410px) {
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 10px;
+  }
+}
+
+.list-card__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 22px;
+  color: #112d4e;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (max-width: $mobile-width) {
+    text-align: left;
+  }
+
+  @media (max-width: 440px) {
+    text-align: center;
+  }
+}
+
+.list-card__numbers-of-tasks {
+  text-align: center;
+  color: #112d4e;
+
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (max-width: $mobile-width) {
+    text-align: left;
+  }
+
+  @media (max-width: 440px) {
+    text-align: center;
+  }
+}
+
+.list-card__controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 10px;
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 0;
+  }
+}
+
+.list-card__link {
+  display: block;
+
+  padding: 5px;
+
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00ffff;
+  text-decoration: none;
+  border-radius: 15px;
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    margin-right: 10px;
+  }
+}
+
+.list-card__delete-button {
+  padding: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  color: #00ffff;
+  background-color: #c96060;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.list-card__delete-button:hover {
+  opacity: 0.8;
+}
+
+.list-card__delete-button:active {
+  opacity: 0.6;
+}
+

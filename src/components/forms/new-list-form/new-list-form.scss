@@ -1,0 +1,36 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.new-list {
+  @include adding
+}
+
+.new-list__title {
+  @include adding__title;
+}
+
+.new-list__form {
+  @include adding__form;
+}
+
+.new-list__field-group {
+  @include adding__group;
+  flex-direction: column;
+}
+
+.new-list__label {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 22px;
+  text-align: center;
+}
+
+.new-list__input {
+  @include adding__input;
+  font-size: 18px;
+}
+
+.new-list__submit-button {
+  @include add-form__submit-button;
+}
