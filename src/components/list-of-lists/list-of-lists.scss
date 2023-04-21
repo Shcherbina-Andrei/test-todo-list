@@ -18,7 +18,7 @@
     width: 90%;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: 950px) {
     grid-template-columns: auto auto;
   }
 

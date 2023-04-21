@@ -3,7 +3,7 @@
 .page {
   box-sizing: border-box;
   width: 1400px;
-  min-height: 1000px;
+  min-height: 800px;
   padding: 20px;
   padding-bottom: 60px;
   margin: 0 auto;
@@ -16,6 +16,10 @@
   @media (max-width: $tablet-width) {
     width: 92%;
     margin-top: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: auto;
   }
 }
 
