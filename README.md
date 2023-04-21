@@ -1,7 +1,5 @@
 # Тестовое задание "To-Do List"
 
-<img alt="YOUR-ALT-TEXT" src="https://wampi.ru/image/RturOCa">
-
 Приложение поможет Вам составить списки задач, что позволит Вам эффективнее реализовывать свои цели.
 
 Демонстрация: https://classy-biscuit-192fa2.netlify.app/
