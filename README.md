@@ -35,7 +35,7 @@
 
 ## Установка:
 
-1. Копирование репозитория - `https://github.com/Shcherbina-Andrei/test-todo-list.git`
+1. Копирование репозитория - `git@github.com:Shcherbina-Andrei/test-todo-list.git`
 
 2. Установка зависимостей - `npm install`
 
